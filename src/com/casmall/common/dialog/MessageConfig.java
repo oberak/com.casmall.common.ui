@@ -179,7 +179,7 @@ public class MessageConfig extends org.eclipse.swt.widgets.Dialog {
 			}
 			{
 				btnSave = new Button(dialogShell, SWT.PUSH | SWT.CENTER);
-				btnSave.setText("ÀúÀå");
+				btnSave.setText("ì €ì¥");
 				btnSave.setLayoutData("cell 2 13");
 				btnSave.setFont(SWTResourceManager.getDefaultFont());
 				btnSave.addMouseListener(new MouseAdapter() {
@@ -190,7 +190,7 @@ public class MessageConfig extends org.eclipse.swt.widgets.Dialog {
 			}
 			{
 				btnCancel = new Button(dialogShell, SWT.PUSH | SWT.CENTER);
-				btnCancel.setText("Ãë¼Ò");
+				btnCancel.setText("ì·¨ì†Œ");
 				btnCancel.setLayoutData("cell 2 13");
 				btnCancel.setFont(SWTResourceManager.getDefaultFont());
 				btnCancel.addMouseListener(new MouseAdapter() {
@@ -398,7 +398,7 @@ public class MessageConfig extends org.eclipse.swt.widgets.Dialog {
 				txtSample = new Text(dialogShell, SWT.MULTI | SWT.READ_ONLY | SWT.H_SCROLL | SWT.V_SCROLL | SWT.BORDER);
 				txtSample.setLayoutData("cell 2 9 1 4,growy");
 				txtSample.setOrientation(SWT.HORIZONTAL);
-				txtSample.setFont(SWTResourceManager.getFont("±¼¸²Ã¼", 8, 0, false, false));
+				txtSample.setFont(SWTResourceManager.getFont("êµ´ë¦¼ì²´", 8, 0, false, false));
 				txtSample.setBackground(SWTResourceManager.getColor(0, 0, 0));
 				txtSample.setForeground(SWTResourceManager.getColor(255, 255, 0));
 			}
@@ -406,7 +406,7 @@ public class MessageConfig extends org.eclipse.swt.widgets.Dialog {
 				txtSampleOutput = new Text(dialogShell, SWT.MULTI | SWT.READ_ONLY | SWT.H_SCROLL | SWT.V_SCROLL | SWT.BORDER);
 				txtSampleOutput.setLayoutData("cell 2 9 1 4,growy");
 				txtSampleOutput.setOrientation(SWT.HORIZONTAL);
-				txtSampleOutput.setFont(SWTResourceManager.getFont("±¼¸²Ã¼", 8, 0, false, false));
+				txtSampleOutput.setFont(SWTResourceManager.getFont("êµ´ë¦¼ì²´", 8, 0, false, false));
 				txtSampleOutput.setBackground(SWTResourceManager.getColor(0, 0, 0));
 				txtSampleOutput.setForeground(SWTResourceManager.getColor(255, 255, 0));
 			}
@@ -653,12 +653,12 @@ public class MessageConfig extends org.eclipse.swt.widgets.Dialog {
 			if(!reopenPort()){
 				return;
 			}
-			MessageDialog.openInformation(dialogShell,"Update Success","Á¤»óÀûÀ¸·Î ÀúÀåµÇ¾ú½À´Ï´Ù.");
+			MessageDialog.openInformation(dialogShell,"Update Success","ì •ìƒì ìœ¼ë¡œ ì €ì¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		// callback Àç°³
+		// callback ì¬ê°œ
 		try {
 	        CmSerialManager.getInstance().setCallbackWork(true);
         } catch (IOException e) {
@@ -676,10 +676,10 @@ public class MessageConfig extends org.eclipse.swt.widgets.Dialog {
             cs.open();
 		} catch (IOException e) {
 			e.printStackTrace();
-			MessageDialog.openError(dialogShell,"Port open error","Port open Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n\n"+e.getMessage());
+			MessageDialog.openError(dialogShell,"Port open error","Port open ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\n\n"+e.getMessage());
 			return false;
 		} catch (PortInUseException piue) {
-			MessageDialog.openError(dialogShell,"Port open error","Port open Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n\nÆ÷Æ®°¡ ÀÌ¹Ì »ç¿ë ÁßÀÔ´Ï´Ù.");
+			MessageDialog.openError(dialogShell,"Port open error","Port open ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\n\ní¬íŠ¸ê°€ ì´ë¯¸ ì‚¬ìš© ì¤‘ì…ë‹ˆë‹¤.");
 			return false;
 		}
 		return true;
@@ -704,12 +704,12 @@ public class MessageConfig extends org.eclipse.swt.widgets.Dialog {
 				if(cs.isOpen())
 					cs.close();
 				cs.open();
-				// callback ÁßÁö
+				// callback ì¤‘ì§€
 			}catch(PortInUseException ie){
-				MessageDialog.openError(dialogShell,"Port open error","Port open Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n\nÆ÷Æ®°¡ ÀÌ¹Ì »ç¿ë ÁßÀÔ´Ï´Ù.");
+				MessageDialog.openError(dialogShell,"Port open error","Port open ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\n\ní¬íŠ¸ê°€ ì´ë¯¸ ì‚¬ìš© ì¤‘ì…ë‹ˆë‹¤.");
 				return;
 			}catch(IOException ie){
-				MessageDialog.openError(dialogShell,"Port open error","Port open Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n\n"+ie.getMessage());
+				MessageDialog.openError(dialogShell,"Port open error","Port open ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\n\n"+ie.getMessage());
 				return;
 			}
 			
@@ -773,15 +773,15 @@ public class MessageConfig extends org.eclipse.swt.widgets.Dialog {
 			cs.open();
 		} catch (IOException e) {
 			e.printStackTrace();
-			MessageDialog.openError(dialogShell,"Port open error","Port open Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n\n"+e.getMessage());
+			MessageDialog.openError(dialogShell,"Port open error","Port open ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\n\n"+e.getMessage());
 			return;
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-			MessageDialog.openError(dialogShell,"Port open error","Port open Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n\n"+e.getMessage());
+			MessageDialog.openError(dialogShell,"Port open error","Port open ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\n\n"+e.getMessage());
 			return;
 		} catch (PortInUseException e) {
 	        e.printStackTrace();
-			MessageDialog.openError(dialogShell,"Port open error","Port open Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n\nÆ÷Æ®°¡ ÀÌ¹Ì »ç¿ë ÁßÀÔ´Ï´Ù.");
+			MessageDialog.openError(dialogShell,"Port open error","Port open ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\n\ní¬íŠ¸ê°€ ì´ë¯¸ ì‚¬ìš© ì¤‘ì…ë‹ˆë‹¤.");
         }
 	} // btnLoadMouseDown
 	

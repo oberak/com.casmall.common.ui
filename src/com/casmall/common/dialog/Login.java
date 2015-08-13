@@ -145,25 +145,25 @@ public class Login extends org.eclipse.swt.widgets.Dialog {
 	
 	private void btnLoginMouseDown(MouseEvent evt) {
 		if("".equals(txtID.getText().trim())){
-			MessageDialog.openInformation(dialogShell,"Validation","·Î±×ÀÎ ID¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+			MessageDialog.openInformation(dialogShell,"Validation","ë¡œê·¸ì¸ IDë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			txtID.setFocus();
 			return;
 		}
 		if("".equals(txtPassword.getText().trim())){
-			MessageDialog.openInformation(dialogShell,"Validation","Password¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+			MessageDialog.openInformation(dialogShell,"Validation","Passwordë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			txtPassword.setFocus();
 			return;
 		}
 		CmUsrInfMgr mgr = new CmUsrInfMgr();
 		if(!mgr.checkLogin(txtID.getText().trim(), txtPassword.getText().trim())){
-			MessageDialog.openInformation(dialogShell,"Login check","ID°¡ ¾ø°Å³ª ºñ¹Ğ¹øÈ£°¡ Àß¸øµÇ¾ú½À´Ï´Ù.");
+			MessageDialog.openInformation(dialogShell,"Login check","IDê°€ ì—†ê±°ë‚˜ ë¹„ë°€ë²ˆí˜¸ê°€ ì˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			txtPassword.setText("");
 			txtID.setText("");
 			txtID.setFocus();
 			return;
 		}
 
-		// TODO NONE ¸ŞÀÎÈ­¸é¿¡¼­ °á°ú°ª ¹ŞÀ» ¼ö ÀÖµµ·Ï Ã³¸® : È®ÀÎ ÇÊ¿ä <== ¹Ì»ç¿ë!!
+		// TODO NONE ë©”ì¸í™”ë©´ì—ì„œ ê²°ê³¼ê°’ ë°›ì„ ìˆ˜ ìˆë„ë¡ ì²˜ë¦¬ : í™•ì¸ í•„ìš” <== ë¯¸ì‚¬ìš©!!
 		dialogShell.setData(true);
 		dialogShell.close();
 	}

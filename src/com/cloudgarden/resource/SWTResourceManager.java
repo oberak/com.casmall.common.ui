@@ -103,11 +103,11 @@ public class SWTResourceManager {
 	}
 	
 	public static Font getDefaultFont(){
-		return getFont("±¼¸²", 11, 0, false, false);
+		return getFont("êµ´ë¦¼", 11, 0, false, false);
 	}
 	
 	public static Font getTitleFont(){
-		return getFont("±¼¸²", 14, 1, false, false);
+		return getFont("êµ´ë¦¼", 14, 1, false, false);
 	}
 
 	public static Image getImage(String url, Control widget) {

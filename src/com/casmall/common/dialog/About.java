@@ -88,7 +88,7 @@ public class About extends org.eclipse.swt.widgets.Dialog {
 				lblSaveTerm.setText("Version 2.0  @2011.01.01");
 				lblSaveTerm.setBackground(SWTResourceManager.getColor(128, 128, 192));
 				lblSaveTerm.setForeground(SWTResourceManager.getColor(0, 0, 64));
-				lblSaveTerm.setFont(SWTResourceManager.getFont("±¼¸²", 14, 1, false, false));
+				lblSaveTerm.setFont(SWTResourceManager.getFont("êµ´ë¦¼", 14, 1, false, false));
 			}
 			{
 				lblTitle = new CLabel(dialogShell, SWT.NONE);
@@ -100,10 +100,10 @@ public class About extends org.eclipse.swt.widgets.Dialog {
 				lblTitleLData.bottom =  new FormAttachment(201, 1000, 0);
 				lblTitleLData.right =  new FormAttachment(1001, 1000, 0);
 				lblTitle.setLayoutData(lblTitleLData);
-				lblTitle.setText("About ´Þ±¸Áö II");
+				lblTitle.setText("About ë‹¬êµ¬ì§€ II");
 				lblTitle.setBackground(SWTResourceManager.getColor(0, 0, 64));
 				lblTitle.setForeground(SWTResourceManager.getColor(255, 255, 255));
-				lblTitle.setFont(SWTResourceManager.getFont("±¼¸²", 24, 1, false, false));
+				lblTitle.setFont(SWTResourceManager.getFont("êµ´ë¦¼", 24, 1, false, false));
 				lblTitle.setAlignment(SWT.CENTER);
 			}
 			{
@@ -118,7 +118,7 @@ public class About extends org.eclipse.swt.widgets.Dialog {
 				cLabel2LData.bottom =  new FormAttachment(465, 1000, 0);
 				cLabel2LData.right =  new FormAttachment(964, 1000, 0);
 				cLabel2.setLayoutData(cLabel2LData);
-				cLabel2.setFont(SWTResourceManager.getFont("±¼¸²", 11, 1, false, false));
+				cLabel2.setFont(SWTResourceManager.getFont("êµ´ë¦¼", 11, 1, false, false));
 				cLabel2.setForeground(SWTResourceManager.getColor(0, 0, 64));
 			}
 			{
@@ -133,7 +133,7 @@ public class About extends org.eclipse.swt.widgets.Dialog {
 				btnCancel.setLayoutData(button1LData2);
 				btnCancel.setText("O K");
 				btnCancel.setBackground(SWTResourceManager.getColor(128, 128, 192));
-				btnCancel.setFont(SWTResourceManager.getFont("±¼¸²", 14, 1, false, false));
+				btnCancel.setFont(SWTResourceManager.getFont("êµ´ë¦¼", 14, 1, false, false));
 				btnCancel.setForeground(SWTResourceManager.getColor(128, 128, 192));
 				btnCancel.addMouseListener(new MouseAdapter() {
 					public void mouseDown(MouseEvent evt) {
@@ -153,7 +153,7 @@ public class About extends org.eclipse.swt.widgets.Dialog {
 				cLabel1LData.top =  new FormAttachment(458, 1000, 0);
 				cLabel1LData.bottom =  new FormAttachment(538, 1000, 0);
 				cLabel1.setLayoutData(cLabel1LData);
-				cLabel1.setFont(SWTResourceManager.getFont("±¼¸²", 11, 1, false, false));
+				cLabel1.setFont(SWTResourceManager.getFont("êµ´ë¦¼", 11, 1, false, false));
 				cLabel1.setForeground(SWTResourceManager.getColor(0,0,64));
 			}
 			{
@@ -168,7 +168,7 @@ public class About extends org.eclipse.swt.widgets.Dialog {
 				cLabel3LData.top =  new FormAttachment(636, 1000, 0);
 				cLabel3LData.bottom =  new FormAttachment(753, 1000, 0);
 				cLabel3.setLayoutData(cLabel3LData);
-				cLabel3.setFont(SWTResourceManager.getFont("±¼¸²", 12, 1, false, false));
+				cLabel3.setFont(SWTResourceManager.getFont("êµ´ë¦¼", 12, 1, false, false));
 				cLabel3.setForeground(SWTResourceManager.getColor(0, 0, 255));
 				cLabel3.setAlignment(SWT.CENTER);
 			}

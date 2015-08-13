@@ -100,10 +100,10 @@ public class SerialConfig extends org.eclipse.swt.widgets.Dialog {
 			cs.open();
 		} catch (IOException e) {
 			e.printStackTrace();
-			MessageDialog.openError(dialogShell,"Port open error","Port open Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n\n"+e.getMessage());
+			MessageDialog.openError(dialogShell,"Port open error","Port open ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\n\n"+e.getMessage());
 			return false;
 		} catch (PortInUseException piue) {
-			MessageDialog.openError(dialogShell,"Port open error","Port open Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n\nÆ÷Æ®°¡ ÀÌ¹Ì »ç¿ë ÁßÀÔ´Ï´Ù.");
+			MessageDialog.openError(dialogShell,"Port open error","Port open ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\n\ní¬íŠ¸ê°€ ì´ë¯¸ ì‚¬ìš© ì¤‘ì…ë‹ˆë‹¤.");
 			return false;
 		}
 		return true;
@@ -248,7 +248,7 @@ public class SerialConfig extends org.eclipse.swt.widgets.Dialog {
 			}
 			{
 				btnSave = new Button(dialogShell, SWT.PUSH | SWT.CENTER);
-				btnSave.setText("ÀúÀå");
+				btnSave.setText("ì €ì¥");
 				btnSave.setLayoutData("cell 2 12");
 				btnSave.setFont(SWTResourceManager.getDefaultFont());
 				btnSave.addMouseListener(new MouseAdapter() {
@@ -259,7 +259,7 @@ public class SerialConfig extends org.eclipse.swt.widgets.Dialog {
 			}
 			{
 				btnCancel = new Button(dialogShell, SWT.PUSH | SWT.CENTER);
-				btnCancel.setText("Ãë¼Ò");
+				btnCancel.setText("ì·¨ì†Œ");
 				btnCancel.setLayoutData("cell 2 12");
 				btnCancel.setFont(SWTResourceManager.getDefaultFont());
 				btnCancel.addMouseListener(new MouseAdapter() {
@@ -441,7 +441,7 @@ public class SerialConfig extends org.eclipse.swt.widgets.Dialog {
 			if(!reopenPort()){
 				return;
 			}
-			MessageDialog.openInformation(dialogShell,"Update Success","Á¤»óÀûÀ¸·Î ÀúÀåµÇ¾ú½À´Ï´Ù.");
+			MessageDialog.openInformation(dialogShell,"Update Success","ì •ìƒì ìœ¼ë¡œ ì €ì¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
